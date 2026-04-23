@@ -4,7 +4,7 @@
     Sets up SSH access from Windows into WSL2 so Claude Code can read Docker Compose logs directly.
 
 .DESCRIPTION
-    Automates the full setup described at: https://yourblog.com/claude-code-wsl2-docker-logs
+    Automates the full setup described at: https://exitcode0.net/posts/claude-code-wsl2-docker-compose-logs/
     - Generates an ed25519 SSH key on Windows (if one doesn't already exist)
     - Installs and configures OpenSSH server in WSL2 Ubuntu
     - Copies the public key into WSL2 authorized_keys
@@ -409,5 +409,5 @@ Write-Host $claudeMdSnippet -ForegroundColor DarkCyan
 Write-Host "---------------------------------------------------------------" -ForegroundColor White
 Write-Host ""
 Write-Host "  Quick test now:  ssh wsl2 ""docker ps""" -ForegroundColor White
-Write-Host "  Blog post:       https://yourblog.com/claude-code-wsl2-docker-logs" -ForegroundColor White
+Write-Host "  Blog post:       https://exitcode0.net/posts/claude-code-wsl2-docker-compose-logs/" -ForegroundColor White
 Write-Host ""
